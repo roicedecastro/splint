@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Set these in Netlify UI → Site settings → Environment variables
+  # BASIC_AUTH_USER = splint
+  # BASIC_AUTH_PASSWORD = your-secure-password
+  #
+  # Waitlist form notifications → Site settings → Forms:
+  # splint.connect@gmail.com
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
